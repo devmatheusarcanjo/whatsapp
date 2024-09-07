@@ -1,0 +1,64 @@
+main {
+    grid-area: content;    
+    overflow: scroll;    
+    gap: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;        
+    
+}
+
+
+.message {
+    padding: 20px;
+    max-width: 70%;        
+    border-radius: 15px;
+    color: var(--corTextoMensagens);
+    position: relative;
+    min-width: 30%;
+   
+}
+
+main .container-hora {
+    position: absolute;
+    display: inline-block;
+    right: 5px;
+    bottom: 5px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+
+main [user="me"] {
+    align-self: flex-end;
+    background-color: var(--corFundoMensagemLocal);
+}
+
+main .check {
+    font-style: bold;
+}
+
+
+main .nome-usuario {
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    top: 5px;
+    font-size: 0.8rem;
+    color: green;
+}
+
+
+
+
+main [user="outer"] {
+    align-self: flex-start;
+    background-color: white;
+}
+

@@ -1,0 +1,10 @@
+:root {
+    --corFundo: #fff;
+    --imagemFundo: url("https://w0.peakpx.com/wallpaper/744/548/HD-wallpaper-whatsapp-ma-doodle-pattern.jpg");
+    
+    --corFundoMensagemLocal: #D9FDD3;
+    --corTextoMensagens: #000;
+    
+    --caret-color: #1DAA61;
+    --cor-mensagem-visualizada: #2490F5;
+}
