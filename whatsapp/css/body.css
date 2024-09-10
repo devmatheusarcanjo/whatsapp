@@ -1,14 +1,20 @@
+
+
 body {
     height: 100dvh;
     background-image: var(--imagemFundo);
     background-size: cover; 
     max-width: 100vw;
     display: grid;
-    font-family: "sans-serif";
+    font-family: sans-serif, roboto;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr 65px;
     grid-template-areas: 
-        "head head head" 
-        "content content content"
-        "footer footer footer";
+        "cabecalho" 
+        "conteudo"
+        "footer";
 }
+
+header {grid-area: cabecalho;}
+main { grid-area: conteudo;}
+footer {grid-area: footer;}

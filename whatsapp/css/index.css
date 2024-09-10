@@ -5,6 +5,10 @@
 @import "./main.css";
 @import "./footer.css";
 
+body * :not(.message *) {
+  user-select: none;
+}
+
 
 
 

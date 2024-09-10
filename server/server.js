@@ -15,6 +15,10 @@ const io = new Server(server, {
 });
 
 const grupo = io.of('/grupo');
+const mensagens = {
+  id: ['jahdkd'],
+  quemRecebeu: ['fulano'],
+};
 let usuariosOnline = [];
 
 grupo.on('connection', (socket) => {
@@ -24,24 +28,23 @@ grupo.on('connection', (socket) => {
   socket.on('mensagemClient', (msg) => {
     console.log('Mensagem do cliente:', msg);
 
-    const { user, idMessage } = JSON.parse(msg);
+    const { nomeUsuario, mensagemId } = JSON.parse(msg);
 
     // Avisar mensagem recebida pelo server
-    socket.emit('notificarMensagemRecebidaPeloServer', idMessage);
-
-    grupo.emit('mensagemServidor', msg);
+    socket.emit('notificarMensagemRecebidaPeloServer', mensagemId);
+    socket.broadcast.emit('novaMensagem', msg);
   });
 
   socket.on('clienteDigitandoOn', (nome) => {
     console.log(nome + ' esta digitando');
 
-    grupo.emit('digitandoOn', nome);
+    socket.broadcast.emit('digitandoOn', nome);
   });
 
   socket.on('clienteDigitandoOff', (nome) => {
     console.log(nome + ' parou de digitar');
 
-    grupo.emit('digitandoOff', nome);
+    socket.broadcast.emit('digitandoOff', nome);
   });
 
   socket.on('disconnect', (event) => {

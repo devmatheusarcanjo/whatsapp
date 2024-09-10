@@ -1,15 +1,20 @@
-main {
-    grid-area: content;    
-    overflow: scroll;    
+main {      
     gap: 10px;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 10px;        
-    
+    gap: 5px; 
+    padding: 10px;     
+    z-index: 2;     
+    overflow-y: scroll;        
 }
 
+.installButton {
+    position: absolute;
+    width: 30%;
+    left: calc(50% - 15%);
+    top: 50%;
+}
 
 .message {
     padding: 20px;
@@ -17,8 +22,7 @@ main {
     border-radius: 15px;
     color: var(--corTextoMensagens);
     position: relative;
-    min-width: 30%;
-   
+    min-width: 30%;              
 }
 
 main .container-hora {

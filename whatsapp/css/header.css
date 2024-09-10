@@ -1,0 +1,77 @@
+
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;        
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;        
+}
+
+header img {
+    width: 50px;
+}
+
+header .imgEback {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+header .bi {
+    font-size: 40px;
+}
+
+header .nomeEMembros {
+    flex: 3;
+}
+
+header #info-events {
+    font-size: .7rem;
+}
+
+header .ultimo {
+    display: flex;
+    flex-direction: row-reverse;   
+    flex: 1;   
+}
+
+header .ultimo .opcoes {   
+    color: #333;    
+}
+
+.menu {
+    position: absolute;
+    background-color: #fff;        
+    display: flex;
+    flex-direction: column;    
+    max-width: 60%;    
+    color: black; 
+    align-self: flex-end;     
+    right: 10px; 
+    top: 55px;
+    z-index: 1000;
+    border-radius: 15px;
+    box-shadow: 0 0 5px -2px #555;
+    padding: 15px 0;            
+}
+
+.menu * {
+    padding: 15px;
+    transition: background-color .1s;
+}
+
+.menu *:active {
+    background-color: #D8D9DA;
+    
+}
+
+.aberto {
+    display: flex;
+}
+
+.fechado {
+    display: none;
+}

@@ -1,13 +1,12 @@
 footer {    
-    background-color: rgba(255,255,100,0);   
-    grid-area: footer; 
-    width: 100dvw; 
-    height: 100%; 
-    display: flex;         
+    background-color: rgba(255,255,100,0);    
+    display: flex;       
+    /* height: 60px; 
+    position: relative;
+    bottom: 0px    */
 }
 
-footer form {
-    
+footer form {    
     height: 100%;
     padding: 10px;
     display: flex; 
