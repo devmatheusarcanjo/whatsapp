@@ -6,7 +6,7 @@
 @import "./footer.css";
 
 body * :not(.message *) {
-  user-select: none;
+  /* user-select: none; */
 }
 
 

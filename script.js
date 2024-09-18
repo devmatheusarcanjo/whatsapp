@@ -1,4 +1,4 @@
-const enderecoServer = '192.168.10.19:3000';
+const enderecoServer = 'https://bdbc-45-229-55-82.ngrok-free.app';
 const main = document.querySelector('#main');
 const chat = document.querySelector('.chat-home');
 const nomeHtml = document.getElementById('nome');
